@@ -1,0 +1,13 @@
+[package]
+name = "instruments"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.17"
+thiserror = "1.0.31"
+astm = { path = "../astm" }
+mlua = { version = "0.8.1", features = ["luau"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8.24"
+tokio = { version = "1", features = ["full"] }
